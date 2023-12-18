@@ -6,4 +6,4 @@
 
 * You can solve the exercises in code wars but to facilitate my review please upload your changes to your repository.
 
-* Deadline: Saturday 02/18/2023 at 11:59 pm.
+* Deadline: Thuesday 12/20/2023 at 11:59 pm.
