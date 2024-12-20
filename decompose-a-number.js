@@ -37,3 +37,13 @@
 // OUTPUT: [[], 0]
 
 // CODE WARS EXCERCISE LINK -> https://www.codewars.com/kata/55ec80d40d5de30631000025/train/javascript
+
+
+
+/*
+* Method name: Sum
+* Description: 
+* Param
+* -> number1 
+* -> number 2
+*/
