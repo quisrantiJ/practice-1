@@ -31,3 +31,30 @@
 // Example
 // Start 1, finish 5, then answer is 2 (1 => 4 => 5 or 1 => 2 => 5)
 // CODE WARS EXCERCISE LINK -> https://www.codewars.com/kata/62c93765cef6f10030dfa92b/train/javascript
+
+// My solution
+
+function solution(start, finish) {
+    if (start > finish) {
+      console.log("The start has to be smaller than the finish");
+      return -1;
+    }
+  
+    if (start === finish) {
+      return 0;
+    }
+  
+    let jumps = 0;
+  
+    while (start < finish) {
+      if (finish - start >= 3) {
+        start += 3;
+      } else {
+        start += 1;
+      }
+      jumps++;
+    }
+    return jumps;
+}
+
+solution(5,3);
