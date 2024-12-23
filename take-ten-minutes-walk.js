@@ -10,3 +10,33 @@
 // It will never give you an empty array (that's not a walk, that's standing still!).
 
 // CODE WARS EXCERCISE LINK -> https://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript
+
+function isValidWalk(walk) {
+    console.log(walk);
+    if(walk.length !== 10){
+        return false;
+    }
+    
+    let ns = 0;
+    let ew = 0;
+    
+    for(let i = 0; i < walk.length; i++){
+        switch(walk[i]){
+              case 'n':
+                  ns++;
+                  break;
+              case 's':
+                  ns--;
+                  break;
+              case 'e':
+                  ew++;
+                  break;
+              case 'w':
+                  ew--;
+                  break;
+        }
+    }
+    return ns === 0 && ew === 0;
+}
+
+console.log(isValidWalk(['s', 'e', 's', 'n','w', 's', 'n', 'n','s', 'n']));
