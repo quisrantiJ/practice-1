@@ -38,12 +38,20 @@
 
 // CODE WARS EXCERCISE LINK -> https://www.codewars.com/kata/55ec80d40d5de30631000025/train/javascript
 
-
-
-/*
-* Method name: Sum
-* Description: 
-* Param
-* -> number1 
-* -> number 2
-*/
+function decompose(num) {
+    let k = [];         
+    let res = num;   
+    for (let base = 2; res >= base*base; base++){
+        let exp = 0;
+        let pow = 1;
+        for (let l = res; l>=base; l=Math.floor(l/base)){
+            exp++;
+            pow = pow * base;
+        }
+        k.push(exp);
+        res = res - pow;
+    }
+    return [k, res];
+  }
+  
+  console.log(decompose(25));
